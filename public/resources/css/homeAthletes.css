@@ -1,0 +1,184 @@
+body{
+    background-color: #131517;
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+}::-webkit-scrollbar{
+    display: none !important;
+    width: 0px !important;
+}  button{
+    border: none;
+    outline: none;
+}
+
+#backButtonContainer{
+    padding: .5rem;
+    background-color: #1E1F25;
+    border-radius: 50%;
+    transition: all .3s;
+    margin-top: 1rem;
+    position: fixed;
+    top: 0 !important;
+    right: 0!important;
+    margin-right: 1.75rem;
+    margin-top: 1rem;
+}#backButtonContainer:hover{
+    box-shadow:         4px 3px 8px  #0E0E0E66;
+    -moz-box-shadow:    4px 3px 8px  #0E0E0E66;
+    -webkit-box-shadow: 4px 3px 8px  #0E0E0E66;
+    -o-box-shadow:      4px 3px 8px  #0E0E0E66;
+    transform: translateX(-2px) translateY(-2px);
+    cursor: pointer;
+}
+
+main{
+    margin: 0 !important;
+    display: flex;
+    min-height: calc(100vh - 81px);
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+
+}h1{
+    margin-left: .5rem;
+    color: #edf2fb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: calc(2rem + .5vw);
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(.3rem + .25vw) !important;
+    margin-top: 2rem !important;
+
+}
+h1{
+    margin: 0;
+    color: #edf2fb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: calc(2rem + .5vw);
+}
+#subHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0 !important;
+}
+#viewForm{
+    display: flex;
+    justify-content: flex-end;
+}#viewForm input{
+    flex-grow: 1;
+    max-width: 300px;
+    border: none;
+    border-radius: calc(.25rem + .075vw);
+    background-color: #1F2021;
+    color: #edf2fb;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: calc(.8rem + .25vw);
+    padding: .4rem .8rem;
+    margin-right: 1rem;
+}#viewForm input::placeholder{
+    color: #00c7e3;
+}#viewForm button{
+    border: none;
+    border-radius: calc(.25rem + .075vw);
+    background-color: #1F2021;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#viewForm button svg{
+    height: 60%;
+}
+#mainContent{
+    margin: 0 !important;
+    padding: 1.5rem calc(1rem + 3vw);
+}
+.athleteItem{
+    padding: .1rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}.athleteItemContainer{
+    background-color: #00424B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+    transition: transform .2s, box-shadow .3s;
+}.athleteItemContainer:hover{
+    transform: translateX(-1%) translateY(-1%);
+    box-shadow: .1rem .1rem 1rem #1F2021
+}.athletePhoto{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: calc(.15rem + .075vw) solid #36B9CC;
+    margin-bottom: .4rem;
+}.athletePhoto svg{
+    width: 100%;
+    height: 100%;
+}.athleteClub{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: calc(1.2rem + .25vw);
+    color: #edf2fb;
+    margin: 0;
+    text-align: center;
+}.athleteName{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: calc(.8rem + .25vw);
+    color: #36B9CC;
+    letter-spacing: 95%;
+    margin: 0;
+    text-align: center;
+}img{
+    width: 100%;
+    height: 100%;
+}
+
+/* phone - tablet */
+@media screen and (max-width: 768px){
+    #backButtonContainer{
+        transition: none;
+        box-shadow:         4px 3px 8px  #0E0E0E66;
+        -moz-box-shadow:    4px 3px 8px  #0E0E0E66;
+        -webkit-box-shadow: 4px 3px 8px  #0E0E0E66;
+        -o-box-shadow:      4px 3px 8px  #0E0E0E66;
+        transform: translateX(-2px) translateY(-2px);
+        cursor: pointer;
+    }#viewForm input{
+        max-width: 1000px;
+    }h1{
+        margin-left: .3rem;
+        margin-bottom: .5rem;
+    }#mainContent{
+        margin: 0 !important;
+        padding: 1rem;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px){
+
+}
+
+/* small laptops */
+@media screen and (min-width: 992px){
+
+}

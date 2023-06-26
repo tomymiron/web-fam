@@ -1,0 +1,1 @@
+modify my.ini, set values of 'timeout to 28800' and 'max_package_size to 250M'
